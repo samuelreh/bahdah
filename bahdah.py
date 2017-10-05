@@ -3,6 +3,11 @@ from flask import Flask, render_template, redirect, url_for, send_from_directory
 app = Flask(__name__)
 
 
+@app.route("/", methods=['GET'])
+def get_index():
+    return redirect(url_for('get_run_clip', run_id=1, clip_id=1))
+
+
 @app.route("/clips/<clip_filename>", methods=['GET'])
 def get_clip(clip_filename):
     return send_from_directory('clips', clip_filename)

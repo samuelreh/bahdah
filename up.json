@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "bahdah",
   "proxy": {
     "command": "FLASK_APP=bahdah.py python -m flask run -p $PORT"
   }

@@ -26,7 +26,7 @@ def get_run_clip(run_id, clip_id):
     clip_url = envd(url_for('get_clip', clip_filename=clip_filename))
     bah_result_url = envd(url_for('post_run_clip_result', run_id=run_id, clip_id=clip_id, result='bah'))
     dah_result_url = envd(url_for('post_run_clip_result', run_id=run_id, clip_id=clip_id, result='dah'))
-    return render_template('index.html', bah_result_url=bah_result_url, dah_result_url=dah_result_url, clip_url=clip_url)
+    return render_template('index.html', bah_result_url=bah_result_url, dah_result_url=dah_result_url, clip_url=clip_url, clip_id=clip_id)
 
 
 @app.route("/runs/<run_id>/clips/<clip_id>/<result>", methods=['POST'])

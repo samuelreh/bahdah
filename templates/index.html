@@ -1,17 +1,17 @@
 <!doctype html>
-<title>Test run {{run_id}} clip {{clip_id}}</title>
-<h1>Test run {{ run_id }} clip {{clip_id}}</h1>
+<title>Test run</title>
+<h1>Test run</h1>
 
 <audio
-  src="/clips/{{clip_filename}}"
+  src="{{clip_url}}"
   autoplay>
   Your browser does not support the <code>audio</code> element.
 </audio>
 
-<form action="/runs/{{run_id}}/clips/{{clip_id}}/bah" method="post">
+<form action="{{bah_result_url}}" method="post">
   <button type="submit">Bah</button>
 </form>
 
-<form action="/runs/{{run_id}}/clips/{{clip_id}}/dah" method="post">
+<form action="{{dah_result_url}}" method="post">
   <button type="submit">Dah</button>
 </form>

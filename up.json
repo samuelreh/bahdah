@@ -1,6 +1,12 @@
 {
-  "name": "bahdah",
+  "name": "app",
   "proxy": {
-    "command": "FLASK_APP=bahdah.py python -m flask run -p $PORT"
+    "command": "FLASK_APP=app.py python -m flask run -p $PORT",
+     "listen_timeout": 12,
+    "shutdown_timeout": 5
+  },
+  "lambda": {
+    "memory": 1536,
+    "timeout": 300
   }
 }

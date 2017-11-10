@@ -1,0 +1,25 @@
+<!doctype html>
+<title>Test clip {{event_id}} / {{ total }}</title>
+<h1>Test clip {{event_id}} / {{ total }}</h1>
+
+<audio
+  src="{{file_url}}"
+  autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<form action="{{result_url}}" method="post">
+  <input hidden="true" name="result" value="bah"/>
+  <input hidden="true" name="event_id" value="{{event_id}}"/>
+  <input hidden="true" name="filename" value="{{filename}}"/>
+  <button type="submit">Bah</button>
+</form>
+
+<br />
+
+<form action="{{result_url}}" method="post">
+  <input hidden="true" name="result" value="dah"/>
+  <input hidden="true" name="event_id" value="{{event_id}}"/>
+  <input hidden="true" name="filename" value="{{filename}}"/>
+  <button type="submit">Dah</button>
+</form>

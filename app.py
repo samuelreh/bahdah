@@ -10,8 +10,8 @@ config = {
   "apiKey": "AIzaSyCyMYbU4swN-cSYyV7KefYyLuEf0G2bsMg",
   "authDomain": "",
   "databaseURL": "https://bahdah-1.firebaseio.com",
-  "storageBucket":"",
-  "serviceAccount": "./bahdah-1-firebase-adminsdk-naxmt-0eae5a615f.json"
+  "storageBucket":""
+  # "serviceAccount": "./bahdah-1-firebase-adminsdk-naxmt-0eae5a615f.json"
 }
 
 firebase = pyrebase.initialize_app(config)

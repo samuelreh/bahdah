@@ -4,4 +4,5 @@ MarkupSafe==1.0
 Werkzeug==0.12.2
 click==6.7
 itsdangerous==0.24
-pyrebase==3.0.27
+git+git://github.com/samuelreh/Pyrebase@master#pyrebase
+protobuf==3.4.0
